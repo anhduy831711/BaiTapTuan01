@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BaiTap3Activity">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Chuyển Đổi Năm Dương Lịch"
+        android:textAlignment="center"
+        android:background="@color/colorBlue"
+        android:textSize="20dp"
+        android:id="@+id/textViewFisrt"/>
+    <TableLayout
+        android:id="@+id/tableLayOutBai3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="*"
+        app:layout_constraintTop_toBottomOf="@+id/textViewFisrt"
+        >
+        <TableRow android:layout_width="match_parent">
+
+            <TextView
+                android:layout_width="1dp"
+                android:layout_height="wrap_content"
+                android:text="Năm Dương Lịch"
+                android:textAlignment="center"
+                android:textSize="12dp" />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Năm Dương Lịch"
+                android:inputType="numberSigned"
+                />
+        </TableRow>
+        <TableRow>
+            <Button
+                android:layout_column="1"
+                android:text="Chuyển Đổi"
+                android:textAllCaps="false"
+                />
+        </TableRow>
+        <TableRow>
+
+            <TextView
+                android:layout_width="1dp"
+                android:layout_height="wrap_content"
+                android:text="Năm Âm Lịch"
+                android:textAlignment="center" />
+            <TextView
+                android:hint="Năm Âm Lịch"
+                android:textSize="25dp"
+                android:background="@color/colorYellow"
+                />
+        </TableRow>
+    </TableLayout>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorBlue"
+        app:layout_constraintTop_toBottomOf="@+id/tableLayOutBai3"
+        />
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BaiTap2Activity">
+
+    <TextView
+        android:id="@+id/textViewDoF"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Fahrenheit:"
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextDoF"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Độ F"
+        android:inputType="numberDecimal"
+        app:layout_constraintTop_toBottomOf="@+id/textViewDoF" />
+
+    <TextView
+        android:id="@+id/textViewDoC"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Celcius:"
+        android:textSize="20dp"
+        app:layout_constraintTop_toBottomOf="@+id/editTextDoF" />
+
+    <EditText
+        android:id="@+id/editTextDoC"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Độ C"
+        app:layout_constraintTop_toBottomOf="@+id/textViewDoC"
+        android:inputType="numberDecimal"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/editTextDoC"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:id="@+id/linearOne"
+        >
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:text="Convert To Celsius"
+            android:textAllCaps="false"
+            />
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:textAllCaps="false"
+            android:text="Convert To Fahrenheit"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnClear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Clear"
+        android:textAllCaps="false"
+        app:layout_constraintTop_toBottomOf="@+id/linearOne"
+        />
+</android.support.constraint.ConstraintLayout>

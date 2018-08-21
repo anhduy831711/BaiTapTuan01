@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textViewTop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorBlue"
+        android:text="Các Kiểu Lập trình Sự Kiện"
+        android:textAlignment="center"
+        android:textSize="12dp"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/txtSoA"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:hint="Số a"
+        android:textSize="12dp"
+        app:layout_constraintTop_toBottomOf="@+id/textViewTop" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="12dp"
+        android:text="Số A:"
+        app:layout_constraintBaseline_toBaselineOf="@+id/txtSoA"
+        app:layout_constraintRight_toLeftOf="@+id/txtSoA" />
+
+    <EditText
+        android:id="@+id/txtSoB"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:hint="Số b"
+        android:textSize="12dp"
+        app:layout_constraintTop_toBottomOf="@+id/txtSoA" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="12dp"
+        android:text="Số B:"
+        app:layout_constraintBaseline_toBaselineOf="@+id/txtSoB"
+        app:layout_constraintRight_toLeftOf="@+id/txtSoB"
+
+        />
+
+    <TextView
+        android:id="@+id/txtKetQua"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorBlue"
+        android:hint="Kết Quả"
+        android:textAlignment="center"
+        android:textSize="12dp"
+        app:layout_constraintTop_toBottomOf="@+id/txtSoB" />
+    <Button
+        android:id="@+id/btnTong"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:autoSizeMinTextSize="5dp"
+        android:text="Tổng 2 Số"
+        android:textSize="12dp"
+        android:onClick="onClickTong"
+        app:layout_constraintTop_toBottomOf="@+id/txtKetQua" />
+
+    <Button
+        android:id="@+id/btnHieu"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="Hiệu 2 Số"
+        android:textSize="12dp"
+        android:onClick="onClickHieu"
+        app:layout_constraintTop_toBottomOf="@+id/btnTong" />
+
+    <Button
+        android:id="@+id/btnNhan"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="Nhân 2 Số"
+        android:textSize="12dp"
+        android:onClick="onClickNhan"
+        app:layout_constraintTop_toBottomOf="@+id/btnHieu" />
+
+    <Button
+        android:id="@+id/btnChia"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="Chia 2 Số"
+        android:textSize="12dp"
+        android:onClick="onClickChia"
+        app:layout_constraintTop_toBottomOf="@+id/btnNhan" />
+
+    <Button
+        android:id="@+id/btnThoat"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="Thoát Chương trình"
+        android:textColor="@color/colorRed"
+        android:textSize="12dp"
+        android:onClick="onClickClose"
+        app:layout_constraintTop_toBottomOf="@+id/btnChia"/>
+</android.support.constraint.ConstraintLayout>
