@@ -1,4 +1,10 @@
 <resources>
     <string name="app_name">BaiTapTuan01</string>
     <string name="title_activity_bai_tap2">BaiTap2</string>
+    <string-array name="stringArrayBai5">
+        <item>Tèo</item>
+        <item>Tý</item>
+        <item>Bin</item>
+        <item>Bo</item>
+    </string-array>
 </resources>

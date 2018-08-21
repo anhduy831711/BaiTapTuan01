@@ -18,7 +18,9 @@
         </activity>
         <activity android:name=".BaiTap2Activity" />
         <activity android:name=".BaiTap3Activity" />
-        <activity android:name=".BaiTap4Activity"></activity>
+        <activity android:name=".BaiTap4Activity" />
+        <activity android:name=".BaiTap5Activity" />
+        <activity android:name=".BaiTap6Activity"></activity>
     </application>
 
 </manifest>
